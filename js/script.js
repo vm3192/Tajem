@@ -32,5 +32,17 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.top-banner__slider').slick({
 		dots: true,
+		arrows: false,
+	});
+});
+
+$(document).ready(function () {
+	$('.speech__slider').slick({
+		centerMode: true,
+		slidesToShow: 5,
+		variableWidth: true,
+		infinite: true, 
+		prevArrow: '<button type="button" class="slick-prev icon-angle-left"></button>',
+		nextArrow: '<button type="button" class="slick-next icon-angle-right"></button>',
 	});
 });
