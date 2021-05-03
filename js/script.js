@@ -39,10 +39,19 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.speech__slider').slick({
 		centerMode: true,
+		centerPadding: '0',
 		slidesToShow: 5,
-		variableWidth: true,
-		infinite: true, 
+		slidesToScroll: 1,
+		infinite: true,
 		prevArrow: '<button type="button" class="slick-prev icon-angle-left"></button>',
 		nextArrow: '<button type="button" class="slick-next icon-angle-right"></button>',
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 3,
+				}
+			}
+		]
 	});
 });
